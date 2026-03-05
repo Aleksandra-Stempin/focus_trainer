@@ -1,0 +1,11 @@
+# JetBrains IDE (WebStorm, IntelliJ, PyCharm, etc.)
+.idea/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Logi błędów
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

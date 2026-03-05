@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center; /* Centruje przyciski w poziomie */
+    gap: 10px;           /* Tworzy równy odstęp między przyciskami */
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin:0px;
+    /*box-shadow: 0 4px 15px rgba(0,0,0,0.1);*/
+    min-height: 100vh;
+    min-width: 60%;
+}
+
+#main-tittle{
+    font-size: 4rem;
+    font-weight: bold;
+    color:#5e36a3;
+}
+
+.display {
+    font-size: 3rem;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 20px 0;*/
+    color: #2c3e50;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 80%;
+    /*margin-bottom: 10px;*/
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 20px;
+    background-color: #3498db;
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+button:hover {
+    background-color: #fcec03;
+    color:#6203fc;
+}
+
+.buttonDiv{
+    padding:10px;
+    padding:10px;
+}
+
+#message{
+    padding-top:20px;
+    font-size: 1.5rem;
+}
+
+#input-area-info{
+    padding-top:20px;
+    padding-button:20px;
+}
+
+#user-input{
+    max-width:200px;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+#stats-area{
+    /*margin-top: 20px;*/
+    padding-top: 10px;
+    font-size: 1.1rem;
+    /*color: #666;*/
+}
+#picture-place{
+    padding:20px:
+}
+
+#picture-place img {
+    max-height: auto;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 15px;
+    /*margin-top: 15px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stats-picture-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 20px;*/
+}
+
+#countdown-timer{
+    font-size: 1.5rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+#pair-count-settings-area{
+    margin-bottom: 10px;
+}
+
+/* Modal Background (Hidden by default) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* Modal Box */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.instruction-section {
+    margin-bottom: 15px;
+}
+
+.instruction-section h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.instruction-section p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.reload-note {
+    background: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #f5e21b;
+    margin-top: 20px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#goodLuckInstruction{
+    text-align:left;
+    color:#51b579;
+    margin: 0;
+    font-size: 2rem;
+}

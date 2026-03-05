@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus trainer</title>
+    <link rel="icon" type="image/png" href="brain.png">
+    <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id = "main-tittle">Focus trainer</h1>
+
+
+
+        <div id="help-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="toggleHelp()">&times;</span>
+
+                <h2>How to Play</h2>
+                <hr>
+
+                <div class="instruction-section">
+                    <h3>1. Set Your Difficulty</h3>
+                    <p>Before you start, use the <strong>dropdown menu</strong> to choose how many pairs you want to remember (3, 4, or 5). This can only be set at the start of a session.</p>
+                </div>
+
+                <div class="instruction-section">
+                    <h3>2. Observe the Sequence</h3>
+                    <p>The game displays pairs (e.g., <strong>A1</strong>). Each appears for <strong>3s</strong> with a <strong>2s</strong> break. Memorize them in the order they appear.</p>
+                </div>
+
+                <div class="instruction-section">
+                    <h3>3. Enter Your Answer</h3>
+                    <p>Type the sequence into the box. You have <strong>10s</strong> to submit.</p>
+                </div>
+
+                <div class="instruction-section">
+                    <h3>4. Track Your Stats</h3>
+                    <p>Check the bottom of the screen for your <strong>Success Rate</strong> and a performance-based cat 😺 image!</p>
+                </div>
+
+                <div class="reload-note">
+                    <p><strong>🔄 Starting New:</strong> To change the number of pairs again or reset your statistics, please <strong>refresh the page (F5)</strong>.</p>
+                </div>
+                <div  id="goodLuckInstruction">
+                    <p><strong>Good luck!</strong></p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="display-area" class="display">Click on Start</div>
+        
+        <div id="input-area" style="display: none;">
+            <p id = "input-area-info">Enter the characters you remember (in sequence):</p>
+            <input type="text" id="user-input" placeholder="np. A1B2...">
+			<div id="countdown-timer"></div>
+            <button id="check-result-btn" onclick="checkResult()">Check result</button>
+        </div>
+
+        <div id="pair-count-settings-area">
+            <label for="pair-select">Number of pairs to remember: </label>
+            <select id="pair-select">
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div class="buttonDiv">
+            <button id="start-btn" onclick="startGame()">Start a new game</button>
+        </div>
+
+        <div class="buttonDiv">
+            <button id="help-btn" onclick="toggleHelp()">Instruction / Help</button>
+        </div>
+
+        <div id="message"></div>
+
+
+        <div id="stats-picture-div">
+            <div id="stats-area"></div>
+            <div id="picture-place" style=""></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
