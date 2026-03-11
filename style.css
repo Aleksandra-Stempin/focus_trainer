@@ -128,7 +128,8 @@ button:hover {
 
 /* Modal Background (Hidden by default) */
 .modal {
-    display: none;
+    /*display: none;*/
+    display: block;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -149,6 +150,11 @@ button:hover {
     max-width: 500px;
     text-align: left;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+    /* KLUCZOWE ZMIANY DLA SUWAKA: */
+    max-height: 70vh;/* Okno nie zajmie więcej niż 85% wysokości ekranu */
+    overflow-y: auto; /* Jeśli treść się nie mieści, pojawi się pionowy suwak */
+    position: relative; /* Pomaga utrzymać strukturę przy przewijaniu */
 }
 
 .instruction-section {
