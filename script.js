@@ -98,6 +98,8 @@ function checkResult() {
 
     const inputField = document.getElementById("user-input");
     const userInput = inputField.value;
+    userInput = userInput.replaceAll(" ","");
+    
 
     // Normalizacja (Upper Case zgodnie z Twoim kodem)
     let cleanUser = userInput.replace(/\s+/g, '').toUpperCase();
